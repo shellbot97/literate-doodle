@@ -1,0 +1,22 @@
+{
+  "name": "my-cypress",
+  "version": "1.0.0",
+  "description": "This package is dedicated to explore, expreriment and fall in love with cypress framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shellbot97/literate-doodle.git"
+  },
+  "author": "shellbot97",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shellbot97/literate-doodle/issues"
+  },
+  "homepage": "https://github.com/shellbot97/literate-doodle#readme",
+  "devDependencies": {
+    "cypress": "^6.7.1"
+  }
+}
