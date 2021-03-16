@@ -159,6 +159,26 @@ describe('My First Test', () => {
   })
 })
 ```
+
+This completes the set-up and basic tutorial of your cypress !
+## Assignment 1
+[solution-assignment1]
+
+```
+// visit any website example: https://www.forbes.com/wheels/
+
+// Test Case 1
+// Check if h1 tag is present or not
+// if present then assert true
+
+// Test Case 2
+// Check all <a></a> should have href property
+
+// Test Case 3
+// Check all image have alt property
+
+```
+
 ### Debugging:
 
 ## core concept
@@ -194,3 +214,4 @@ MIT
 [overview]: https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell
 [getting started]: https://docs.cypress.io/guides/getting-started/installing-cypress.html
 [libxss1]: https://packages.debian.org/sid/libxss1
+[solution-assignment1]:  https://github.com/shellbot97/literate-doodle/blob/main/cypress/integration/assignment-session1.js
