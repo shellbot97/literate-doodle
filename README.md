@@ -27,7 +27,7 @@
 
 ### Setup:
 
-(Considering that you are using ubuntu, because **Free Software, Hell Yeah!**😈  )
+(Considering that you are using ubuntu, because **Free Software, Hell Yeah!** 😈  )
 Cypress requires following dependancies to run smoothly,
 | Dependancy | Doc | Version |
 | ------ | ------ | ------ |
@@ -179,31 +179,7 @@ This completes the set-up and basic tutorial of your cypress !
 
 ```
 
-### Debugging:
-
-## core concept
-- How Cypress queries the DOM
-- How Cypress manages subjects and chains of commands
-- What assertions look like and how they work
-- How timeouts are applied to commands
-
-## Dashboard
-
-
-## Guides
-
-
-## Testing strategies
-
-
-## Continious integration
-
-## Component Testing
-
-## Tooling
-
-## References
-
+For diving deep into this sea of automation refer [teachme.md] 🌊
 
 ## License
 
@@ -215,3 +191,4 @@ MIT
 [getting started]: https://docs.cypress.io/guides/getting-started/installing-cypress.html
 [libxss1]: https://packages.debian.org/sid/libxss1
 [solution-assignment1]:  https://github.com/shellbot97/literate-doodle/blob/main/cypress/integration/assignment-session1.js
+[teachme.md]: https://github.com/shellbot97/literate-doodle/blob/main/TEACHME.md
