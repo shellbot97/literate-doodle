@@ -49,16 +49,50 @@ describe('Assignment 2: Diving deep',()=>{
     // // 4. Test the same page for visual testing in Desktop ,  Mobile and Tablet after doing all the above steps.
 
     // //This one is compulsory
-    // it('Test-Desktop',()=>{
+    it('Test-Desktop',()=>{
+        cy.viewport('macbook-13')
 
-    // })
+        cy.get('.rounded-t-sm').click()
+        cy.get('.cursor-pointer.inline-block > .font-semibold').click()
 
-    // it('Test-Mobile',()=>{
+        cy.get('.best-car-card').contains("Add To Compare").first().click()
+        cy.get('.best-car-card').contains("Add To Compare").first().click()
+        cy.get('.best-car-card').contains("Add To Compare").first().click()
+        // cy.get('.best-car-card py-18px w-full relative max-w-960px xl:p-0').contains("Add To Compare").second().click()
+        // cy.get('.best-car-card py-18px w-full relative max-w-960px xl:p-0').contains("Add To Compare").third().click()
         
-    // })
+        // // cy.get('#best-car-125099 > .xl\:px-5 > .xl\:ml-15px > .xl\:inline-flex > .inline-block').click()
+        // // cy.get('#best-car-23170 > .xl\:px-5 > .xl\:ml-15px > .xl\:inline-flex > .inline-block').click()
+        // cy.get(':nth-child(4) > .table-content > .xl\:inline-flex').click()
+        // cy.get(':nth-child(5) > .table-content > .xl\:inline-flex').click()
+        // cy.get(':nth-child(6) > .table-content > .xl\:inline-flex').click()
 
-    // it('Test-Tablet',()=>{
+        cy.matchImageSnapshot('desktop-homepage');
+    })
+
+    it('Test-Mobile',()=>{
+        cy.viewport('iphone-6+')
+
+        cy.scrollTo(0, 150) 
+
+        cy.get('.rounded-t-sm').click()
+        cy.get('.cursor-pointer.inline-block > .font-semibold').click()
+
+        cy.get('.best-car-card').contains("Compare").first().click()
+        cy.get('.best-car-card').contains("Compare").first().click()
+        cy.get('.best-car-card').contains("Compare").first().click()
+    })
+
+    it('Test-Tablet',()=>{
+
+        cy.viewport('ipad-2')
         
-    // })
+        cy.get('.rounded-t-sm').click()
+        cy.get('.cursor-pointer.inline-block > .font-semibold').click()
+        
+        cy.get('#car-widget-123750').contains("Compare").first().click()
+        cy.get('#car-widget-153956').contains("Compare").first().click()
+        cy.get('#car-widget-22448').contains("Compare").first().click()
+    })
 
 })
