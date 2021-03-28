@@ -18,6 +18,7 @@
   "homepage": "https://github.com/shellbot97/literate-doodle#readme",
   "devDependencies": {
     "cypress": "^6.7.1",
-    "cypress-image-snapshot": "^4.0.1"
+    "cypress-image-snapshot": "^4.0.1",
+    "cypress-xpath": "^1.6.2"
   }
 }

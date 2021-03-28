@@ -67,6 +67,7 @@ describe('Assignment 2: Diving deep',()=>{
         // cy.get(':nth-child(5) > .table-content > .xl\:inline-flex').click()
         // cy.get(':nth-child(6) > .table-content > .xl\:inline-flex').click()
 
+        cy.scrollTo('bottom', { easing: 'linear', duration: 3000 });
         cy.matchImageSnapshot('desktop-homepage');
     })
 
@@ -82,7 +83,7 @@ describe('Assignment 2: Diving deep',()=>{
         cy.get('#car-widget-153956').contains("Compare").first().click()
         cy.get('#car-widget-22448').contains("Compare").first().click()
 
-
+        cy.scrollTo('bottom', { easing: 'linear', duration: 3000 });
         cy.matchImageSnapshot('mobile-homepage');
     })
 
@@ -97,6 +98,7 @@ describe('Assignment 2: Diving deep',()=>{
         cy.get('#car-widget-153956').contains("Compare").first().click()
         cy.get('#car-widget-22448').contains("Compare").first().click()
 
+        cy.scrollTo('bottom', { easing: 'linear', duration: 3000 });
         cy.matchImageSnapshot('ipad-homepage');
     })
 
